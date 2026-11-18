@@ -8,7 +8,7 @@ World news summary infographic for **Wednesday, 18 November 2026**, built for th
 
 ## Overview
 
-`main.py` outputs a 1024x1024 RGB PNG (`entry.png`) presenting an editorial newspaper broadsheet of **39 verified world news stories** from Wednesday, 18 November 2026 across all six continents and beats (Asia-Pacific, Middle East, Europe, Africa, Americas, and Global & Space). It features a full-width light-paper masthead and colored region count ribbon, 13 open-column custom vector story illustrations with wire attributions, a light-mode equirectangular `WHERE IT HAPPENED` map, an open typographic `BY THE NUMBERS` panel, and a 26-story brief directory.
+`main.py` outputs a 1024x1024 PNG (`entry.png`) presenting an editorial newspaper broadsheet of **42 verified single-topic world news stories** from Wednesday, 18 November 2026 across six regions (Asia-Pacific, Middle East, Europe, Africa, Americas, and Global & Oceania). It features a full-width cream broadsheet masthead and proportional colored region count ribbon, 13 custom pastel vector story illustrations with bottom caption strips and wire attributions, a collision-free `WHERE IT HAPPENED` map with hairline leader lines, a 29-story brief directory (`#14–#42`), and a `DATE CHECK` verification strip.
 
 ## Run
 
