@@ -22,12 +22,12 @@ MARGIN_X = 28
 CONTENT_W = CANVAS_PX - 2 * MARGIN_X  # 1992 px
 
 # Vertical band bounds on the 2048x2048 supersampled layout
-MAST_Y0, MAST_Y1 = 0, 240
-ROW1_Y0, ROW1_Y1 = 248, 678
-ROW2_Y0, ROW2_Y1 = 690, 1062
-ROW3_Y0, ROW3_Y1 = 1074, 1446
-NUMBERS_Y0, NUMBERS_Y1 = 1456, 1506
-LOWER_Y0, LOWER_Y1 = 1516, 1938
+MAST_Y0, MAST_Y1 = 0, 236
+NUMBERS_Y0, NUMBERS_Y1 = 240, 268
+ROW1_Y0, ROW1_Y1 = 276, 712
+ROW2_Y0, ROW2_Y1 = 724, 1104
+ROW3_Y0, ROW3_Y1 = 1116, 1496
+LOWER_Y0, LOWER_Y1 = 1510, 1936
 DATECHECK_Y0, DATECHECK_Y1 = 1945, 2009
 FOOTER_Y0, FOOTER_Y1 = 2016, 2044
 
@@ -88,7 +88,7 @@ FEATURED_CARDS = (
         "bg": "#F5E1DA",
         "caption": "KUWAIT · BAHRAIN · DRONES INTERCEPTED",
         "headline": "Iran fires drones at US base in Kuwait; Bahrain intercepts",
-        "deck": "Tehran says it hit Ali Al Salem after Tuesday's US strike on Qeshm; Kuwait reports interceptions.",
+        "deck": "Tehran says it hit Ali Al Salem after Tuesday's US strike on Qeshm.",
         "true_lat": 29.35,
         "true_lon": 47.5,
         "pin_lat": 29.35,
@@ -149,32 +149,32 @@ FEATURED_CARDS = (
         "row": 2,
         "region": "EUROPE",
         "kicker": "EUROPE · UKRAINE WAR",
-        "wire": "REUTERS",
+        "wire": "KYIV · REUTERS",
         "bg": "#E4E9F2",
-        "caption": "KERCH STRAIT · ROAD SPAN DOWN",
-        "headline": "Kerch bridge road span falls into the strait",
-        "deck": "Second Ukrainian strike in days shuts the road link to Crimea; rail partly running.",
-        "true_lat": 45.3,
-        "true_lon": 36.5,
-        "pin_lat": 58.0,
-        "pin_lon": 40.0,
-        "art": "kerch_bridge",
+        "caption": "UKRAINE · 141 DRONES · 126 DOWNED",
+        "headline": "Russia fires 141 drones at Ukraine; 126 downed",
+        "deck": "Strikes on Odesa and Donetsk region kill at least four; power cut in Rivne.",
+        "true_lat": 46.5,
+        "true_lon": 30.7,
+        "pin_lat": 57.5,
+        "pin_lon": 39.0,
+        "art": "ukraine_drones",
     },
     {
         "id": 6,
         "row": 2,
         "region": "AMERICAS",
-        "kicker": "AMERICAS · US POLITICS",
-        "wire": "AP",
+        "kicker": "AMERICAS · US CONGRESS",
+        "wire": "AP · NPR",
         "bg": "#DCEBF7",
-        "caption": "ALASKA · SENATE MAJORITY",
-        "headline": "Peltola wins Alaska; Democrats hold 56 Senate seats",
-        "deck": "AP call 03:19 UTC Wed: 144,302 to Sullivan's 131,844; first Alaska Native senator.",
-        "true_lat": 64.0,
-        "true_lon": -150.0,
-        "pin_lat": 64.0,
-        "pin_lon": -150.0,
-        "art": "alaska_senate",
+        "caption": "CAPITOL HILL · 251–11 CAUCUS VOTE",
+        "headline": "Democrats pick Jeffries for House Speaker",
+        "deck": "251–11 caucus ballot puts him on course to be the first Black Speaker in Jan.",
+        "true_lat": 38.9,
+        "true_lon": -77.0,
+        "pin_lat": 52.0,
+        "pin_lon": -114.0,
+        "art": "jeffries_speaker",
     },
     {
         "id": 7,
@@ -218,7 +218,7 @@ FEATURED_CARDS = (
         "bg": "#DCEBF7",
         "caption": "BAY OF BENGAL · LANDFALL FRI",
         "headline": "Cyclone Akvan heads for India's east coast",
-        "deck": "IMD sees landfall Friday near Andhra–Odisha; up to 204,070 readied to evacuate.",
+        "deck": "IMD expects Friday landfall; up to 204,070 readied to evacuate.",
         "true_lat": 16.5,
         "true_lon": 86.0,
         "pin_lat": 16.5,
@@ -233,7 +233,7 @@ FEATURED_CARDS = (
         "wire": "AMNESTY",
         "bg": "#F5E1DA",
         "caption": "EL OBEID · CIVILIANS KILLED",
-        "headline": "Amnesty: RSF drone strikes killed 37 in El Obeid",
+        "headline": "Amnesty: RSF drones killed 37 in El Obeid",
         "deck": "Rights group urges war-crimes inquiry; the RSF denies targeting civilians.",
         "true_lat": 13.2,
         "true_lon": 30.2,
@@ -282,7 +282,7 @@ FEATURED_CARDS = (
         "bg": "#EFE6D5",
         "caption": "SPOT GOLD · 14-MONTH LOW",
         "headline": "Gold falls below $3,800, lowest in over a year",
-        "deck": "Spot bullion slides 1.5% to $3,792/oz on firm dollar and Fed rate outlook; Brent crude eases to $91.82.",
+        "deck": "Spot slides 1.5% to $3,792/oz on a firm dollar; Brent eases to $91.82.",
         "true_lat": 40.7,
         "true_lon": -74.0,
         "pin_lat": 40.7,
@@ -294,11 +294,11 @@ FEATURED_CARDS = (
 BRIEF_ITEMS = (
     # Column A (#14 - #28)
     {"id": 14, "region": "MENA", "city": "Gaza:", "text": "WHO urges \"unobstructed\" aid before winter", "lat": 31.4, "lon": 34.4},
-    {"id": 15, "region": "MENA", "city": "Jerusalem:", "text": "Knesset elects Matan Kahana speaker, 66–52", "lat": 31.8, "lon": 35.2},
+    {"id": 15, "region": "MENA", "city": "Nuseirat:", "text": "Israeli tanks push into central Gaza; three reported killed", "lat": 31.4, "lon": 34.4},
     {"id": 16, "region": "MENA", "city": "Yemen:", "text": "Saudi-led coalition says it hit 60 Houthi sites", "lat": 15.4, "lon": 44.2},
     {"id": 17, "region": "MENA", "city": "Hormuz:", "text": "ADNOC says its ship was hit; 1 missing, 11 hurt", "lat": 26.6, "lon": 56.3},
     {"id": 18, "region": "MENA", "city": "Cairo:", "text": "IMF and Egypt reach staff-level review deal", "lat": 30.0, "lon": 31.2},
-    {"id": 19, "region": "EUROPE", "city": "Kyiv:", "text": "Russia fires 141 drones overnight; 126 downed", "lat": 50.4, "lon": 30.5},
+    {"id": 19, "region": "EUROPE", "city": "Warsaw:", "text": "Poland says it foiled a Russian railway sabotage plot", "lat": 52.2, "lon": 21.0},
     {"id": 20, "region": "EUROPE", "city": "Luxembourg:", "text": "Euro-area inflation confirmed at 4.0% (Eurostat)", "lat": 49.6, "lon": 6.1},
     {"id": 21, "region": "EUROPE", "city": "Berlin:", "text": "Coalition to cut power tax and cap fuel prices", "lat": 52.5, "lon": 13.4},
     {"id": 22, "region": "EUROPE", "city": "Bucharest:", "text": "M5.7 quake, Romania's strongest since 2018", "lat": 44.4, "lon": 26.1},
@@ -315,37 +315,37 @@ BRIEF_ITEMS = (
     {"id": 32, "region": "APAC", "city": "Manila:", "text": "Trump claims trade deal; Manila says none signed", "lat": 14.6, "lon": 121.0},
     {"id": 33, "region": "APAC", "city": "Lahore:", "text": "World's most polluted big city, AQI 339", "lat": 31.5, "lon": 74.3},
     {"id": 34, "region": "APAC", "city": "Kemerovo:", "text": "Criminal case opened after An-12 crash kills 19", "lat": 55.4, "lon": 86.1},
-    {"id": 35, "region": "AMERICAS", "city": "Capitol Hill:", "text": "House Democrats pick Jeffries for speaker", "lat": 38.9, "lon": -77.0},
+    {"id": 35, "region": "AMERICAS", "city": "Federal Reserve:", "text": "Minutes show most officials see more hikes; Dow falls 1.1%", "lat": 38.9, "lon": -77.0},
     {"id": 36, "region": "AMERICAS", "city": "Washington:", "text": "NSA confirms outage on classified network", "lat": 39.1, "lon": -76.8},
     {"id": 37, "region": "AMERICAS", "city": "Ottawa:", "text": "Carney renews currency swap with China", "lat": 45.4, "lon": -75.7},
     {"id": 38, "region": "AMERICAS", "city": "Peru:", "text": "Offshore quake shakes coast; no major damage", "lat": -12.0, "lon": -77.5},
     {"id": 39, "region": "GLOBAL", "city": "Canberra:", "text": "Australia sanctions settler leader Daniella Weiss", "lat": -35.3, "lon": 149.1},
     {"id": 40, "region": "GLOBAL", "city": "Cook Islands:", "text": "Cyclone Xavier holds at Category 5", "lat": -21.2, "lon": -159.8},
-    {"id": 41, "region": "GLOBAL", "city": "Geneva:", "text": "UNHCR says nearly 2,500 dead or missing at sea in 2026", "lat": 46.2, "lon": 6.1},
+    {"id": 41, "region": "GLOBAL", "city": "Auckland:", "text": "GTA VI launches at midnight after 13-year wait; 14.9m pre-orders", "lat": -36.9, "lon": 174.8},
     {"id": 42, "region": "GLOBAL", "city": "Zurich:", "text": "France's Diallo to challenge Infantino for FIFA", "lat": 47.4, "lon": 8.5},
 )
 
 DAY_IN_NUMBERS = (
-    ("25.9B km", "Voyager 1 (#3)"),
-    ("€45bn", "EU Ukraine Loan (#4)"),
-    ("56–44", "US Senate (#6)"),
-    ("35×35", "COP31 Goal (#7)"),
-    ("3.6%", "UK Oct CPI (#8)"),
-    ("204K", "Cyclone Evac (#9)"),
-    ("141", "Ukraine Drones (#19)"),
+    ("25.9bn km", "Voyager 1 (10:16 UTC)"),
+    ("€45bn", "EU Ukraine loan"),
+    ("141", "drones fired at Ukraine"),
+    ("251–11", "Jeffries speaker vote"),
+    ("3.6%", "UK Oct CPI"),
+    ("$3,792/oz", "spot gold (14-mo low)"),
 )
 
 DATE_CHECK_COPY = (
-    "All 42 stories carry verified Wednesday 18 November 2026 datelines and UTC timestamps: "
-    "03:19 UTC AP calls Alaska Senate for Peltola (#6); 07:00 UTC UK ONS reports 3.6% October CPI (#8); "
-    "10:16 UTC NASA confirms Voyager 1 at one light-day (#3); Day-1 APEC Shenzhen arrival (#2); "
-    "Wednesday Gulf drone interceptions (#1, triggered by Tuesday night's Qeshm strike); PAHO measles ruling (#11)."
+    "Left out on purpose because they were first reported on Tuesday 17 November, not today: "
+    "the Kerch Bridge span collapse · Nvidia's $115.8bn quarterly results · "
+    "Peltola's Alaska Senate win (AP call Tue night US time) · the Knesset speaker vote · "
+    "the Board of Peace Gaza report · the Prague train crash · Mongolia's president resigning. "
+    "All 42 stories above carry verified Wednesday 18 November 2026 datelines."
 )
 
 FOOTER_ATTESTATION = (
     "Claims by warring sides are attributed. Original drawings. "
-    "Sources: Reuters · AP · AFP · BBC · Al Jazeera · Anadolu · NASA · "
-    "EU Commission · ONS · Eurostat · IMD · PAHO · WHO · Amnesty · UNHCR"
+    "Sources: Reuters · AP · AFP · BBC · Al Jazeera · NPR · Anadolu · NASA · "
+    "EU Commission · ONS · Eurostat · IMD · PAHO · WHO · Amnesty · Sensor Tower"
 )
 
 
@@ -530,7 +530,7 @@ def draw_masthead_and_ribbon(draw, font_for) -> None:
         for reg in REGIONS
     }
     total = sum(counts.values())
-    rib_y0, rib_y1 = 206, 238
+    rib_y0, rib_y1 = 206, 236
     gap = 4
     usable_w = CONTENT_W - (len(REGIONS) - 1) * gap
     rib_fnt = font_for("cond_bold", 20)
@@ -740,56 +740,93 @@ def art_eu_ukraine_loan(image_cls, draw_cls, font_for, w: int, h: int, card: dic
     return panel
 
 
-def art_kerch_bridge(image_cls, draw_cls, font_for, w: int, h: int, card: dict):
-    """#5: Kerch bridge arches with one road span collapsed into the strait water (no fire)."""
+def art_ukraine_drones(image_cls, draw_cls, font_for, w: int, h: int, card: dict):
+    """#5: Dusk-slate sky, city silhouettes & pylon, 3 black delta drones, intercept burst & 141."""
     panel = image_cls.new("RGB", (w, h), parse_hex_rgb(card["bg"]))
     d = draw_cls.Draw(panel)
     uh = draw_caption_footer(d, w, h, card["caption"], font_for)
 
-    water_y = 92
-    d.rectangle((0, water_y, w, uh), fill=(147, 197, 253))
-    d.line((0, water_y, w, water_y), fill=(59, 130, 246), width=2)
+    # Low city skyline along bottom (kept low on left for crisp 141 legibility)
+    d.rectangle((0, uh - 12, w, uh), fill=(203, 213, 225))
+    skyline = (
+        (14, uh - 26, 38, (100, 116, 139)),
+        (42, uh - 32, 64, (71, 85, 105)),
+        (68, uh - 24, 96, (100, 116, 139)),
+        (100, uh - 30, 128, (71, 85, 105)),
+        (134, uh - 42, 166, (71, 85, 105)),
+        (170, uh - 34, 200, (100, 116, 139)),
+        (206, uh - 46, 236, (51, 65, 85)),
+        (242, uh - 28, 274, (100, 116, 139)),
+    )
+    for x0, y0, x1, col in skyline:
+        d.rectangle((x0, y0, x1, uh), fill=col)
 
-    # Background intact rail link (partly running) + vertical piers
-    d.line((0, 46, w, 46), fill=(100, 116, 139), width=3)
-    for px in (44, 136, 244, 336):
-        d.rectangle((px - 5, 46, px + 5, water_y + 12), fill=(71, 85, 105))
+    # Power pylon on bottom-right (Rivne grid outage)
+    px, py_bot, py_top = 328, uh, uh - 64
+    d.line((px - 16, py_bot, px - 5, py_top + 12, px, py_top), fill=INK_SLATE, width=3)
+    d.line((px + 16, py_bot, px + 5, py_top + 12, px, py_top), fill=INK_SLATE, width=3)
+    d.line((px - 22, py_top + 18, px + 22, py_top + 18), fill=INK_SLATE, width=3)
+    d.line((px - 28, py_top + 34, px + 28, py_top + 34), fill=INK_SLATE, width=3)
+    d.line((px - 11, py_bot - 14, px + 11, py_bot - 14), fill=INK_SLATE, width=2)
+    d.line((px - 22, py_top + 18, w, py_top + 28), fill=(100, 116, 139), width=1)
+    d.line((px + 28, py_top + 34, w, py_top + 42), fill=(100, 116, 139), width=1)
 
-    # Left and right intact road decks + sleek supporting arch ribs
-    d.rectangle((0, 62, 146, 70), fill=(31, 41, 55))
-    d.rectangle((240, 62, w, 70), fill=(31, 41, 55))
-    d.arc((44, 64, 136, 104), start=180, end=360, fill=(51, 65, 85), width=4)
-    d.arc((244, 64, 336, 104), start=180, end=360, fill=(51, 65, 85), width=4)
+    # 3 incoming black delta drones from upper-right
+    for dx, dy in ((262, 22), (314, 18), (354, 42)):
+        draw_dashed_segment(d, dx + 26, dy - 12, dx + 6, dy - 2, (148, 163, 184), width=2, step_px=8.0)
+        d.polygon(
+            [(dx - 16, dy + 6), (dx + 12, dy - 8), (dx + 7, dy + 2), (dx + 10, dy + 11)],
+            fill=INK_DARK,
+        )
 
-    # Tilted fallen central road span plunging into strait water
-    d.polygon([(144, 62), (154, 62), (218, 106), (206, 112)], fill=(31, 41, 55))
-    d.ellipse((194, 98, 232, 116), fill=(219, 234, 254), outline=(59, 130, 246), width=2)
+    # Air-defense dashed trail & bright yellow-white intercept burst
+    draw_dashed_segment(d, 150, uh - 43, 194, 52, (217, 119, 6), width=3, step_px=10.0)
+    draw_star_polygon(d, 200, 48, 20, 8, 8, (254, 240, 138), outline=(217, 119, 6))
+    draw_star_polygon(d, 200, 48, 10, 4, 8, WHITE)
+
+    draw_text_centered(d, 74, 46, "141", font_for("serif_bold", 50), INK_DARK)
     return panel
 
 
-def art_alaska_senate(image_cls, draw_cls, font_for, w: int, h: int, card: dict):
-    """#6: Alaska silhouette + 56-44 hero label and 100-dot Senate chamber grid."""
+def art_jeffries_speaker(image_cls, draw_cls, font_for, w: int, h: int, card: dict):
+    """#6: Capitol dome silhouette, 251-11 vote bar & chamber dot grid."""
     panel = image_cls.new("RGB", (w, h), parse_hex_rgb(card["bg"]))
     d = draw_cls.Draw(panel)
-    draw_caption_footer(d, w, h, card["caption"], font_for)
+    uh = draw_caption_footer(d, w, h, card["caption"], font_for)
 
-    alaska = [
-        (36, 22), (112, 16), (114, 70), (146, 100), (132, 106),
-        (106, 78), (74, 84), (32, 112), (18, 102), (40, 74), (24, 46),
-    ]
-    d.polygon(alaska, fill=(29, 78, 216), outline=(30, 58, 138))
+    # Capitol dome & wings silhouette on left
+    base_y = uh - 8
+    d.rectangle((14, base_y, 144, uh), fill=(186, 206, 224))
+    d.rectangle((22, base_y - 26, 136, base_y), fill=WHITE, outline=(51, 65, 85), width=2)
+    d.rectangle((48, base_y - 46, 110, base_y - 26), fill=WHITE, outline=(51, 65, 85), width=2)
+    for col_x in range(56, 105, 8):
+        d.line((col_x, base_y - 44, col_x, base_y - 28), fill=(71, 85, 105), width=2)
+    d.chord((52, base_y - 82, 106, base_y - 10), start=180, end=360, fill=WHITE, outline=(51, 65, 85), width=2)
+    d.arc((64, base_y - 82, 94, base_y - 10), start=180, end=360, fill=(148, 163, 184), width=1)
+    d.line((79, base_y - 82, 79, base_y - 46), fill=(148, 163, 184), width=1)
+    d.rectangle((72, base_y - 94, 86, base_y - 80), fill=WHITE, outline=(51, 65, 85), width=2)
+    d.line((79, base_y - 106, 79, base_y - 94), fill=(51, 65, 85), width=2)
 
-    draw_text_centered(d, 260, 22, "56–44", font_for("serif_bold", 34), INK_DARK)
+    # Bold hero figure 251–11 on upper-right
+    draw_text_centered(d, 260, 26, "251–11", font_for("serif_bold", 36), INK_DARK)
 
-    gx0, gy0 = 178, 46
-    step_x, step_y = 18.0, 7.6
-    for col in range(10):
-        for row in range(10):
-            idx = col * 10 + row
+    # Horizontal caucus vote bar (251 blue vs 11 slate-grey)
+    bx0, bx1, by0, by1 = 158, 362, 49, 65
+    split_x = bx0 + round((bx1 - bx0) * (251 / 262))
+    d.rectangle((bx0, by0, split_x, by1), fill=(29, 78, 216))
+    d.rectangle((split_x, by0, bx1, by1), fill=(100, 116, 139))
+    d.rectangle((bx0, by0, bx1, by1), outline=(30, 58, 138), width=1)
+
+    # Crisp chamber dot grid (15 cols x 4 rows = 60 dots: 57 blue vs 3 slate-grey)
+    gx0, gy0 = 165, 78
+    step_x, step_y = 13.6, 10.5
+    for col in range(15):
+        for row in range(4):
+            idx = col * 4 + row
             cx = gx0 + col * step_x
             cy = gy0 + row * step_y
-            dot_col = (29, 78, 216) if idx < 56 else CRIMSON_ACCENT
-            d.ellipse((cx - 2.6, cy - 2.6, cx + 2.6, cy + 2.6), fill=dot_col)
+            dot_col = (29, 78, 216) if idx < 57 else (100, 116, 139)
+            d.ellipse((cx - 3.2, cy - 3.2, cx + 3.2, cy + 3.2), fill=dot_col)
     return panel
 
 
@@ -991,8 +1028,8 @@ ART_REGISTRY: dict[str, object] = {
     "apec_shenzhen": art_apec_shenzhen,
     "voyager_lightday": art_voyager_lightday,
     "eu_ukraine_loan": art_eu_ukraine_loan,
-    "kerch_bridge": art_kerch_bridge,
-    "alaska_senate": art_alaska_senate,
+    "ukraine_drones": art_ukraine_drones,
+    "jeffries_speaker": art_jeffries_speaker,
     "cop31_climate": art_cop31_climate,
     "uk_inflation": art_uk_inflation,
     "cyclone_akvan": art_cyclone_akvan,
@@ -1013,9 +1050,9 @@ def draw_featured_rows(canvas, draw, font_for, image_cls, draw_cls) -> None:
     """Render Rows 1-3 (#1-#13) with pastel scenes, bottom caption strips, kickers, headlines & decks."""
     row_configs = (
         # (row_num, cols, gap, y0, y1, art_h, badge_r, hl_hi, hl_lo, deck_hi, deck_lo)
-        (1, 3, 24, ROW1_Y0, ROW1_Y1, 222, 13, 42, 30, 23, 19),
-        (2, 5, 18, ROW2_Y0, ROW2_Y1, 152, 11, 33, 24, 21, 17),
-        (3, 5, 18, ROW3_Y0, ROW3_Y1, 152, 11, 33, 24, 21, 17),
+        (1, 3, 24, ROW1_Y0, ROW1_Y1, 226, 13, 42, 30, 23, 19),
+        (2, 5, 18, ROW2_Y0, ROW2_Y1, 158, 11, 33, 24, 21, 17),
+        (3, 5, 18, ROW3_Y0, ROW3_Y1, 158, 11, 33, 24, 21, 17),
     )
 
     for row_num, cols, gap, ry0, ry1, art_h, badge_r, hl_hi, hl_lo, deck_hi, deck_lo in row_configs:
@@ -1056,7 +1093,7 @@ def draw_featured_rows(canvas, draw, font_for, image_cls, draw_cls) -> None:
             draw_text_centered(draw, kicker_x + kw / 2.0, meta_cy, card["kicker"], kicker_fnt, reg_rgb)
 
             hl_y0 = meta_cy + badge_r + 5
-            hl_box_h = 98 if row_num == 1 else 78
+            hl_box_h = 102 if row_num == 1 else 82
             hl_fnt, hl_lines, hl_step = wrap_text_lines(
                 draw,
                 font_for,
@@ -1093,61 +1130,69 @@ def draw_featured_rows(canvas, draw, font_for, image_cls, draw_cls) -> None:
                 draw.text((cx0, dy), line, font=deck_fnt, fill=INK_SLATE)
                 dy += deck_step
 
-    draw.line((MARGIN_X, 684, MARGIN_X + CONTENT_W, 684), fill=RULE_MED, width=1)
-    draw.line((MARGIN_X, 1068, MARGIN_X + CONTENT_W, 1068), fill=RULE_MED, width=1)
+    draw.line((MARGIN_X, 718, MARGIN_X + CONTENT_W, 718), fill=RULE_MED, width=1)
+    draw.line((MARGIN_X, 1110, MARGIN_X + CONTENT_W, 1110), fill=RULE_MED, width=1)
+    draw.line((MARGIN_X, 1503, MARGIN_X + CONTENT_W, 1503), fill=INK_DARK, width=2)
 
 
 def draw_day_in_numbers_strip(draw, font_for) -> None:
-    """Render THE DAY IN NUMBERS 7-metric summary strip between Row 3 and the lower section."""
+    """Render slim 28px inline THE DAY IN NUMBERS ticker directly under the region ribbon."""
     x0, x1 = MARGIN_X, MARGIN_X + CONTENT_W
     y0, y1 = NUMBERS_Y0, NUMBERS_Y1
     draw.rectangle((x0, y0, x1, y1), fill=(243, 237, 226))
+    draw.line((x0, y0, x1, y0), fill=RULE_MED, width=1)
+    draw.line((x0, y1, x1, y1), fill=INK_DARK, width=2)
 
-    hdr_w = 218
-    hx1 = x0 + hdr_w
-    draw.rectangle((x0, y0, hx1, y1), fill=CRIMSON_ACCENT)
-    hdr_fnt, _ = fit_font_width(draw, font_for, "cond_bold", "THE DAY IN NUMBERS", hdr_w - 18, 22, 14)
-    draw_text_centered(draw, (x0 + hx1) / 2.0, (y0 + y1) / 2.0, "THE DAY IN NUMBERS", hdr_fnt, WHITE)
+    title = "THE DAY IN NUMBERS"
+    pad_x = 10.0
+    usable_w = (x1 - x0) - 2.0 * pad_x
+    min_gap = 20.0
 
-    cell_w = (x1 - hx1) / len(DAY_IN_NUMBERS)
-    max_cell_w = cell_w - 14.0
-
-    # Pick the largest uniform (metric_px, label_px) pair where all 7 cells fit on one line
-    gap_px = 7.0
-    chosen = (20, 16)
-    for m_sz, l_sz in ((25, 19), (24, 18), (22, 17), (21, 16), (20, 16)):
-        mf = font_for("serif_bold", m_sz)
-        lf = font_for("cond_bold", l_sz)
-        if all(
-            draw.textlength(m, font=mf) + gap_px + draw.textlength(lbl, font=lf) <= max_cell_w
-            for m, lbl in DAY_IN_NUMBERS
-        ):
-            chosen = (m_sz, l_sz)
+    chosen_sz = 14
+    for sz in range(19, 13, -1):
+        tf = font_for("cond_bold", sz + 1)
+        vf = font_for("sans_bold", sz)
+        lf = font_for("sans_reg", sz)
+        tw = draw.textlength(title, font=tf)
+        pws = [
+            draw.textlength(f"{val} ", font=vf) + draw.textlength(lbl, font=lf)
+            for val, lbl in DAY_IN_NUMBERS
+        ]
+        if tw + sum(pws) + len(DAY_IN_NUMBERS) * min_gap <= usable_w:
+            chosen_sz = sz
             break
 
-    mf = font_for("serif_bold", chosen[0])
-    lf = font_for("cond_bold", chosen[1])
-    _, my0, _, my1 = draw.textbbox((0, 0), "25.9B€%", font=mf)
-    asc_m, _ = mf.getmetrics()
-    asc_l, _ = lf.getmetrics()
+    tf = font_for("cond_bold", chosen_sz + 1)
+    vf = font_for("sans_bold", chosen_sz)
+    lf = font_for("sans_reg", chosen_sz)
+
+    tw = draw.textlength(title, font=tf)
+    pair_parts = []
+    for val, lbl in DAY_IN_NUMBERS:
+        vtxt = f"{val} "
+        vw = draw.textlength(vtxt, font=vf)
+        lw = draw.textlength(lbl, font=lf)
+        pair_parts.append((vtxt, lbl, vw, lw))
+
+    total_text_w = tw + sum(vw + lw for _, _, vw, lw in pair_parts)
+    gap = (usable_w - total_text_w) / len(DAY_IN_NUMBERS)
+
+    _, vy0, _, vy1 = draw.textbbox((0, 0), "25.9Ag%", font=vf)
     cy = (y0 + y1) / 2.0
-    metric_ty = cy - (my0 + my1) / 2.0
-    label_ty = metric_ty + asc_m - asc_l
+    ty_v = cy - (vy0 + vy1) / 2.0
+    asc_v, _ = vf.getmetrics()
+    asc_t, _ = tf.getmetrics()
+    asc_l, _ = lf.getmetrics()
+    ty_t = ty_v + asc_v - asc_t
+    ty_l = ty_v + asc_v - asc_l
 
-    for idx, (metric, label) in enumerate(DAY_IN_NUMBERS):
-        cx0 = hx1 + idx * cell_w
-        cx1 = float(x1) if idx == len(DAY_IN_NUMBERS) - 1 else (cx0 + cell_w)
-        if idx > 0:
-            draw.line((cx0, y0 + 6, cx0, y1 - 6), fill=RULE_MED, width=1)
-        mw = draw.textlength(metric, font=mf)
-        lw = draw.textlength(label, font=lf)
-        total_w = mw + gap_px + lw
-        tx = (cx0 + cx1 - total_w) / 2.0
-        draw.text((tx, metric_ty), metric, font=mf, fill=INK_DARK)
-        draw.text((tx + mw + gap_px, label_ty), label, font=lf, fill=INK_SLATE)
-
-    draw.line((x0, y0, x1, y0), fill=INK_DARK, width=2)
-    draw.line((x0, y1, x1, y1), fill=INK_DARK, width=2)
+    cx = x0 + pad_x
+    draw.text((cx, ty_t), title, font=tf, fill=CRIMSON_ACCENT)
+    cx += tw + gap
+    for vtxt, lbl, vw, lw in pair_parts:
+        draw.text((cx, ty_v), vtxt, font=vf, fill=INK_DARK)
+        draw.text((cx + vw, ty_l), lbl, font=lf, fill=INK_SLATE)
+        cx += vw + lw + gap
 
 
 # World landmass outlines in (lat, lon) order for the equirectangular atlas
@@ -1278,7 +1323,7 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     draw.text((x1 - sw, LOWER_Y0 + 5), sub_note, font=sub_fnt, fill=INK_MUTED)
     draw.line((x0, LOWER_Y0 + 30, x1, LOWER_Y0 + 30), fill=INK_DARK, width=2)
 
-    vx0, vy0, vx1, vy1 = x0, 1550, x1, 1840
+    vx0, vy0, vx1, vy1 = x0, 1546, x1, 1836
     vw, vh = vx1 - vx0, vy1 - vy0
     map_img = image_cls.new("RGB", (vw, vh), MAP_SEA)
     md = draw_cls.Draw(map_img)
@@ -1338,8 +1383,8 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     canvas.paste(map_img, (vx0, vy0))
     draw.rectangle((vx0, vy0, vx1, vy1), outline=RULE_MED, width=1)
 
-    # Legend below map (y 1846-1938): 6-region color key + crisp pin/dot explanation
-    key_y = 1860
+    # Legend below map (y 1844-1936): 6-region color key + crisp pin/dot explanation
+    key_y = 1856
     key_sz = 17
     for cand in range(18, 13, -1):
         kf = font_for("cond_bold", cand)
@@ -1362,7 +1407,7 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     # Pin / dot / hairline explanation lines (optically aligned to glyph mid-height)
     leg_fnt = font_for("sans_reg", 19)
     _, lby0, _, lby1 = draw.textbbox((0, 0), "Ag", font=leg_fnt)
-    l1_ty = 1885
+    l1_ty = 1882
     l1_cy = l1_ty + (lby0 + lby1) / 2.0
     draw.ellipse((x0, l1_cy - 10, x0 + 20, l1_cy + 10), fill=INK_DARK)
     draw_text_centered(draw, x0 + 10, l1_cy, "1", font_for("sans_bold", 13), WHITE)
@@ -1372,7 +1417,7 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     draw.ellipse((dot_x - 5, l1_cy - 5, dot_x + 5, l1_cy + 5), fill=INK_DARK)
     draw.text((dot_x + 11, l1_ty), "dot: briefs 14–42", font=leg_fnt, fill=INK_SLATE)
     draw.text(
-        (x0, 1913),
+        (x0, 1910),
         "Hairlines lead from crowded spots to the true place.",
         font=leg_fnt,
         fill=INK_SLATE,
@@ -1392,7 +1437,7 @@ def draw_briefs_columns(draw, font_for) -> None:
     draw.line((rx0, LOWER_Y0 + 30, rx1, LOWER_Y0 + 30), fill=INK_DARK, width=2)
 
     mid_x = (rx0 + rx1) // 2
-    body_y0 = 1550
+    body_y0 = 1546
     draw.line((mid_x, body_y0 + 2, mid_x, LOWER_Y1), fill=RULE_MED, width=1)
 
     cols = (
@@ -1419,8 +1464,8 @@ def draw_briefs_columns(draw, font_for) -> None:
 
             lead = item["city"] + " "
             body = item["text"]
-            chosen = 17
-            for sz in range(21, 16, -1):
+            chosen = 14
+            for sz in range(19, 13, -1):
                 fb = font_for("sans_bold", sz)
                 fr = font_for("sans_reg", sz)
                 if draw.textlength(lead, font=fb) + draw.textlength(body, font=fr) <= max_text_w:
@@ -1445,33 +1490,34 @@ def draw_date_check_bar(draw, font_for) -> None:
     tx0 = x0 + 18
     max_w = x1 - tx0 - 14
     prefix = "DATE CHECK · "
-    body_fnt = font_for("sans_reg", 20)
-    bold_fnt = font_for("sans_bold", 20)
-    prefix_w = draw.textlength(prefix, font=bold_fnt)
-
-    # Wrap first line accounting for bold prefix width, then remaining words across line 2
     words = DATE_CHECK_COPY.split()
-    line1_words: list[str] = []
-    cur = ""
-    idx = 0
-    while idx < len(words):
-        cand = words[idx] if not cur else f"{cur} {words[idx]}"
-        if prefix_w + draw.textlength(cand, font=body_fnt) <= max_w:
-            cur = cand
-            line1_words.append(words[idx])
-            idx += 1
-        else:
-            break
-    line1 = " ".join(line1_words)
-    line2 = " ".join(words[idx:])
 
-    # Shrink slightly if line2 ever exceeds max_w
-    sz = 20
-    while draw.textlength(line2, font=body_fnt) > max_w and sz > 16:
-        sz -= 1
-        body_fnt = font_for("sans_reg", sz)
-        bold_fnt = font_for("sans_bold", sz)
-        prefix_w = draw.textlength(prefix, font=bold_fnt)
+    # Re-wrap at each candidate font size so both lines fit cleanly without clipping
+    body_fnt = font_for("sans_reg", 15)
+    bold_fnt = font_for("sans_bold", 15)
+    prefix_w = draw.textlength(prefix, font=bold_fnt)
+    line1, line2 = "", ""
+    for sz in range(20, 14, -1):
+        bf = font_for("sans_reg", sz)
+        bld = font_for("sans_bold", sz)
+        pw = draw.textlength(prefix, font=bld)
+        l1_words: list[str] = []
+        cur = ""
+        idx = 0
+        while idx < len(words):
+            cand = words[idx] if not cur else f"{cur} {words[idx]}"
+            if pw + draw.textlength(cand, font=bf) <= max_w:
+                cur = cand
+                l1_words.append(words[idx])
+                idx += 1
+            else:
+                break
+        cand_l1 = " ".join(l1_words)
+        cand_l2 = " ".join(words[idx:])
+        if draw.textlength(cand_l2, font=bf) <= max_w or sz == 15:
+            body_fnt, bold_fnt, prefix_w = bf, bld, pw
+            line1, line2 = cand_l1, cand_l2
+            break
 
     draw.text((tx0, y0 + 8), prefix, font=bold_fnt, fill=CRIMSON_ACCENT)
     draw.text((tx0 + prefix_w, y0 + 8), line1, font=body_fnt, fill=INK_DARK)
@@ -1511,8 +1557,8 @@ def render_infographic() -> Path:
     font_for = load_font_bank(ImageFont)
 
     draw_masthead_and_ribbon(draw, font_for)
-    draw_featured_rows(canvas, draw, font_for, Image, ImageDraw)
     draw_day_in_numbers_strip(draw, font_for)
+    draw_featured_rows(canvas, draw, font_for, Image, ImageDraw)
     draw_world_map_section(canvas, draw, font_for, Image, ImageDraw)
     draw_briefs_columns(draw, font_for)
     draw_date_check_bar(draw, font_for)
@@ -1522,18 +1568,11 @@ def render_infographic() -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
     dst = out_dir / "entry.png"
     out_img = canvas.resize((FINAL_PX, FINAL_PX), Image.Resampling.LANCZOS)
-    try:
-        out_img = out_img.quantize(
-            colors=256,
-            method=Image.Quantize.LIBIMAGEQUANT,
-            dither=Image.Dither.NONE,
-        )
-    except ValueError:
-        out_img = out_img.quantize(
-            colors=256,
-            method=Image.Quantize.MEDIANCUT,
-            dither=Image.Dither.NONE,
-        )
+    out_img = out_img.quantize(
+        colors=256,
+        method=Image.Quantize.FASTOCTREE,
+        dither=Image.Dither.NONE,
+    )
     out_img.save(dst, format="PNG", optimize=True, compress_level=9)
     if dst.stat().st_size > MAX_FILE_BYTES:
         raise ValueError(f"Output exceeds 1 MiB cap: {dst.stat().st_size} bytes")
