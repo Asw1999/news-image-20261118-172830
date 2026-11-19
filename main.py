@@ -23,18 +23,19 @@ CONTENT_W = CANVAS_PX - 2 * MARGIN_X  # 1992 px
 
 # Vertical band bounds on the 2048x2048 supersampled layout
 MAST_Y0, MAST_Y1 = 0, 240
-ROW1_Y0, ROW1_Y1 = 250, 700
-ROW2_Y0, ROW2_Y1 = 714, 1100
-ROW3_Y0, ROW3_Y1 = 1114, 1500
-LOWER_Y0, LOWER_Y1 = 1512, 1936
+ROW1_Y0, ROW1_Y1 = 248, 678
+ROW2_Y0, ROW2_Y1 = 690, 1062
+ROW3_Y0, ROW3_Y1 = 1074, 1446
+NUMBERS_Y0, NUMBERS_Y1 = 1456, 1506
+LOWER_Y0, LOWER_Y1 = 1516, 1938
 DATECHECK_Y0, DATECHECK_Y1 = 1945, 2009
 FOOTER_Y0, FOOTER_Y1 = 2016, 2044
 
 # Warm broadsheet color system (flat editorial colors, ~40 total)
 PAPER_BG = (250, 247, 240)       # #FAF7F0
 INK_DARK = (17, 24, 39)          # #111827
-INK_SLATE = (55, 65, 81)         # #374151
-INK_MUTED = (107, 114, 128)      # #6B7280
+INK_SLATE = (30, 41, 59)         # #1E293B
+INK_MUTED = (71, 85, 105)        # #475569
 CAPTION_BG = (31, 41, 55)        # #1F2937
 RULE_LIGHT = (229, 224, 213)     # #E5E0D5
 RULE_MED = (213, 207, 194)       # #D5CFC2
@@ -183,7 +184,7 @@ FEATURED_CARDS = (
         "wire": "ANADOLU",
         "bg": "#E2ECE4",
         "caption": "COP31 · ANTALYA",
-        "headline": "COP31: 75 nations back Türkiye's '35x35' goal",
+        "headline": "COP31: 75 nations back Türkiye's '35×35' goal",
         "deck": "Electricity to be 35% of energy use by 2035; target enters first draft text.",
         "true_lat": 36.9,
         "true_lon": 30.7,
@@ -276,17 +277,17 @@ FEATURED_CARDS = (
         "id": 13,
         "row": 3,
         "region": "GLOBAL",
-        "kicker": "CULTURE · GAMES",
-        "wire": "SENSOR TOWER",
-        "bg": "#E4E9F2",
-        "caption": "MIDNIGHT LAUNCH · NEW ZEALAND FIRST",
-        "headline": "GTA VI goes on sale after a 13-year wait",
-        "deck": "Midnight launch starts in New Zealand; 15m+ pre-orders, Sensor Tower estimates.",
-        "true_lat": -36.9,
-        "true_lon": 174.8,
-        "pin_lat": -38.0,
-        "pin_lon": 168.0,
-        "art": "gta_midnight",
+        "kicker": "GLOBAL · MARKETS",
+        "wire": "REUTERS",
+        "bg": "#EFE6D5",
+        "caption": "SPOT GOLD · 14-MONTH LOW",
+        "headline": "Gold falls below $3,800, lowest in over a year",
+        "deck": "Spot bullion slides 1.5% to $3,792/oz on firm dollar and Fed rate outlook; Brent crude eases to $91.82.",
+        "true_lat": 40.7,
+        "true_lon": -74.0,
+        "pin_lat": 40.7,
+        "pin_lon": -62.0,
+        "art": "global_gold_markets",
     },
 )
 
@@ -320,22 +321,31 @@ BRIEF_ITEMS = (
     {"id": 38, "region": "AMERICAS", "city": "Peru:", "text": "Offshore quake shakes coast; no major damage", "lat": -12.0, "lon": -77.5},
     {"id": 39, "region": "GLOBAL", "city": "Canberra:", "text": "Australia sanctions settler leader Daniella Weiss", "lat": -35.3, "lon": 149.1},
     {"id": 40, "region": "GLOBAL", "city": "Cook Islands:", "text": "Cyclone Xavier holds at Category 5", "lat": -21.2, "lon": -159.8},
-    {"id": 41, "region": "GLOBAL", "city": "Markets:", "text": "Gold sinks below $3,800, lowest in a year", "lat": 40.7, "lon": -74.0},
+    {"id": 41, "region": "GLOBAL", "city": "Geneva:", "text": "UNHCR says nearly 2,500 dead or missing at sea in 2026", "lat": 46.2, "lon": 6.1},
     {"id": 42, "region": "GLOBAL", "city": "Zurich:", "text": "France's Diallo to challenge Infantino for FIFA", "lat": 47.4, "lon": 8.5},
 )
 
+DAY_IN_NUMBERS = (
+    ("25.9B km", "Voyager 1 (#3)"),
+    ("€45bn", "EU Ukraine Loan (#4)"),
+    ("56–44", "US Senate (#6)"),
+    ("35×35", "COP31 Goal (#7)"),
+    ("3.6%", "UK Oct CPI (#8)"),
+    ("204K", "Cyclone Evac (#9)"),
+    ("141", "Ukraine Drones (#19)"),
+)
+
 DATE_CHECK_COPY = (
-    "All 42 stories happened or were first reported on Wednesday 18 November 2026. "
-    "Tuesday night's US strike on Qeshm appears only as the trigger for Wednesday's "
-    "Iranian drones (#1). Peltola's race was called 03:19 UTC Wed. Left out as 17 Nov news: "
-    "Nvidia's $115.8bn quarter, the Board of Peace Gaza report, the Prague train crash, "
-    "Mongolia's president resigning."
+    "All 42 stories carry verified Wednesday 18 November 2026 datelines and UTC timestamps: "
+    "03:19 UTC AP calls Alaska Senate for Peltola (#6); 07:00 UTC UK ONS reports 3.6% October CPI (#8); "
+    "10:16 UTC NASA confirms Voyager 1 at one light-day (#3); Day-1 APEC Shenzhen arrival (#2); "
+    "Wednesday Gulf drone interceptions (#1, triggered by Tuesday night's Qeshm strike); PAHO measles ruling (#11)."
 )
 
 FOOTER_ATTESTATION = (
     "Claims by warring sides are attributed. Original drawings. "
     "Sources: Reuters · AP · AFP · BBC · Al Jazeera · Anadolu · NASA · "
-    "EU Commission · ONS · Eurostat · IMD · PAHO · WHO · Amnesty · Sensor Tower"
+    "EU Commission · ONS · Eurostat · IMD · PAHO · WHO · Amnesty · UNHCR"
 )
 
 
@@ -801,7 +811,7 @@ def art_cop31_climate(image_cls, draw_cls, font_for, w: int, h: int, card: dict)
     d.line((158, 76, 158, 102), fill=(15, 118, 110), width=5)
     d.polygon([(164, 48), (150, 62), (159, 62), (153, 74), (168, 58), (159, 58)], fill=(250, 204, 21))
 
-    draw_text_centered(d, 282, uh // 2, "35x35", font_for("serif_bold", 48), (15, 118, 110))
+    draw_text_centered(d, 282, uh // 2, "35×35", font_for("serif_bold", 48), (15, 118, 110))
     return panel
 
 
@@ -943,35 +953,36 @@ def art_horn_border(image_cls, draw_cls, font_for, w: int, h: int, card: dict):
     return panel
 
 
-def art_gta_midnight(image_cls, draw_cls, font_for, w: int, h: int, card: dict):
-    """#13: Crisp gamepad silhouette, midnight clock face, and bold 00:00 label."""
+def art_global_gold_markets(image_cls, draw_cls, font_for, w: int, h: int, card: dict):
+    """#13: Stacked gold bullion ingots, downward crimson trend arrow, and crisp $3,792 label."""
     panel = image_cls.new("RGB", (w, h), parse_hex_rgb(card["bg"]))
     d = draw_cls.Draw(panel)
     uh = draw_caption_footer(d, w, h, card["caption"], font_for)
 
-    # Gamepad silhouette on the left
-    d.rounded_rectangle((26, 36, 140, 88), radius=22, fill=(30, 41, 59))
-    d.polygon([(30, 68), (58, 72), (46, 102), (22, 98)], fill=(30, 41, 59))
-    d.polygon([(136, 68), (108, 72), (120, 102), (144, 98)], fill=(30, 41, 59))
-    # D-pad + 4 face buttons
-    d.line((54, 50, 54, 72), fill=WHITE, width=5)
-    d.line((43, 61, 65, 61), fill=WHITE, width=5)
-    for bx, by, bcol in (
-        (110, 50, (236, 72, 153)),
-        (120, 60, (6, 182, 212)),
-        (110, 70, (34, 197, 94)),
-        (100, 60, (250, 204, 21)),
-    ):
-        d.ellipse((bx - 4, by - 4, bx + 4, by + 4), fill=bcol)
+    # Stacked trapezoidal gold bullion ingots (bottom pair + top bar)
+    base_y = uh - 18
+    bars = (
+        (22, 80, base_y, base_y - 30),
+        (84, 142, base_y, base_y - 30),
+        (53, 111, base_y - 32, base_y - 62),
+    )
+    for x0, x1, yb, yt in bars:
+        pts = [(x0, yb), (x1, yb), (x1 - 7, yt), (x0 + 7, yt)]
+        d.polygon(pts, fill=(250, 204, 21))
+        d.polygon(
+            [(x0, yb), (x1, yb), (x1 - 3, yb - 9), (x0 + 3, yb - 9)],
+            fill=(234, 179, 8),
+        )
+        d.polygon(pts, outline=(217, 119, 6), width=2)
+        d.line((x0 + 10, yt + 6, x0 + 28, yt + 6), fill=WHITE, width=3)
+        d.line((x0 + 10, yt + 6, x0 + 6, yb - 12), fill=WHITE, width=2)
 
-    # Midnight clock face in center
-    cx, cy, cr = 196, uh // 2, 26
-    d.ellipse((cx - cr, cy - cr, cx + cr, cy + cr), fill=WHITE, outline=(30, 41, 59), width=4)
-    d.line((cx, cy, cx, cy - 18), fill=(30, 41, 59), width=4)
-    d.line((cx, cy, cx, cy - 13), fill=CRIMSON_ACCENT, width=3)
-    d.ellipse((cx - 3, cy - 3, cx + 3, cy + 3), fill=(30, 41, 59))
+    # Bold crimson downward trend arrow
+    cy = uh // 2
+    d.line((148, cy - 30, 174, cy - 6, 188, cy - 16, 212, cy + 20), fill=CRIMSON_ACCENT, width=6)
+    d.polygon([(220, cy + 31), (196, cy + 19), (218, cy + 4)], fill=CRIMSON_ACCENT)
 
-    draw_text_centered(d, 304, uh // 2, "00:00", font_for("serif_bold", 42), INK_DARK)
+    draw_text_centered(d, 302, cy, "$3,792", font_for("serif_bold", 46), INK_DARK)
     return panel
 
 
@@ -988,7 +999,7 @@ ART_REGISTRY: dict[str, object] = {
     "sudan_el_obeid": art_sudan_el_obeid,
     "measles_shield": art_measles_shield,
     "horn_border": art_horn_border,
-    "gta_midnight": art_gta_midnight,
+    "global_gold_markets": art_global_gold_markets,
 }
 
 
@@ -1002,9 +1013,9 @@ def draw_featured_rows(canvas, draw, font_for, image_cls, draw_cls) -> None:
     """Render Rows 1-3 (#1-#13) with pastel scenes, bottom caption strips, kickers, headlines & decks."""
     row_configs = (
         # (row_num, cols, gap, y0, y1, art_h, badge_r, hl_hi, hl_lo, deck_hi, deck_lo)
-        (1, 3, 24, ROW1_Y0, ROW1_Y1, 230, 13, 42, 30, 23, 19),
-        (2, 5, 18, ROW2_Y0, ROW2_Y1, 160, 11, 33, 24, 21, 17),
-        (3, 5, 18, ROW3_Y0, ROW3_Y1, 160, 11, 33, 24, 21, 17),
+        (1, 3, 24, ROW1_Y0, ROW1_Y1, 222, 13, 42, 30, 23, 19),
+        (2, 5, 18, ROW2_Y0, ROW2_Y1, 152, 11, 33, 24, 21, 17),
+        (3, 5, 18, ROW3_Y0, ROW3_Y1, 152, 11, 33, 24, 21, 17),
     )
 
     for row_num, cols, gap, ry0, ry1, art_h, badge_r, hl_hi, hl_lo, deck_hi, deck_lo in row_configs:
@@ -1045,7 +1056,7 @@ def draw_featured_rows(canvas, draw, font_for, image_cls, draw_cls) -> None:
             draw_text_centered(draw, kicker_x + kw / 2.0, meta_cy, card["kicker"], kicker_fnt, reg_rgb)
 
             hl_y0 = meta_cy + badge_r + 5
-            hl_box_h = 104 if row_num == 1 else 84
+            hl_box_h = 98 if row_num == 1 else 78
             hl_fnt, hl_lines, hl_step = wrap_text_lines(
                 draw,
                 font_for,
@@ -1082,9 +1093,61 @@ def draw_featured_rows(canvas, draw, font_for, image_cls, draw_cls) -> None:
                 draw.text((cx0, dy), line, font=deck_fnt, fill=INK_SLATE)
                 dy += deck_step
 
-    draw.line((MARGIN_X, 707, MARGIN_X + CONTENT_W, 707), fill=RULE_MED, width=1)
-    draw.line((MARGIN_X, 1107, MARGIN_X + CONTENT_W, 1107), fill=RULE_MED, width=1)
-    draw.line((MARGIN_X, 1506, MARGIN_X + CONTENT_W, 1506), fill=INK_DARK, width=2)
+    draw.line((MARGIN_X, 684, MARGIN_X + CONTENT_W, 684), fill=RULE_MED, width=1)
+    draw.line((MARGIN_X, 1068, MARGIN_X + CONTENT_W, 1068), fill=RULE_MED, width=1)
+
+
+def draw_day_in_numbers_strip(draw, font_for) -> None:
+    """Render THE DAY IN NUMBERS 7-metric summary strip between Row 3 and the lower section."""
+    x0, x1 = MARGIN_X, MARGIN_X + CONTENT_W
+    y0, y1 = NUMBERS_Y0, NUMBERS_Y1
+    draw.rectangle((x0, y0, x1, y1), fill=(243, 237, 226))
+
+    hdr_w = 218
+    hx1 = x0 + hdr_w
+    draw.rectangle((x0, y0, hx1, y1), fill=CRIMSON_ACCENT)
+    hdr_fnt, _ = fit_font_width(draw, font_for, "cond_bold", "THE DAY IN NUMBERS", hdr_w - 18, 22, 14)
+    draw_text_centered(draw, (x0 + hx1) / 2.0, (y0 + y1) / 2.0, "THE DAY IN NUMBERS", hdr_fnt, WHITE)
+
+    cell_w = (x1 - hx1) / len(DAY_IN_NUMBERS)
+    max_cell_w = cell_w - 14.0
+
+    # Pick the largest uniform (metric_px, label_px) pair where all 7 cells fit on one line
+    gap_px = 7.0
+    chosen = (20, 16)
+    for m_sz, l_sz in ((25, 19), (24, 18), (22, 17), (21, 16), (20, 16)):
+        mf = font_for("serif_bold", m_sz)
+        lf = font_for("cond_bold", l_sz)
+        if all(
+            draw.textlength(m, font=mf) + gap_px + draw.textlength(lbl, font=lf) <= max_cell_w
+            for m, lbl in DAY_IN_NUMBERS
+        ):
+            chosen = (m_sz, l_sz)
+            break
+
+    mf = font_for("serif_bold", chosen[0])
+    lf = font_for("cond_bold", chosen[1])
+    _, my0, _, my1 = draw.textbbox((0, 0), "25.9B€%", font=mf)
+    asc_m, _ = mf.getmetrics()
+    asc_l, _ = lf.getmetrics()
+    cy = (y0 + y1) / 2.0
+    metric_ty = cy - (my0 + my1) / 2.0
+    label_ty = metric_ty + asc_m - asc_l
+
+    for idx, (metric, label) in enumerate(DAY_IN_NUMBERS):
+        cx0 = hx1 + idx * cell_w
+        cx1 = float(x1) if idx == len(DAY_IN_NUMBERS) - 1 else (cx0 + cell_w)
+        if idx > 0:
+            draw.line((cx0, y0 + 6, cx0, y1 - 6), fill=RULE_MED, width=1)
+        mw = draw.textlength(metric, font=mf)
+        lw = draw.textlength(label, font=lf)
+        total_w = mw + gap_px + lw
+        tx = (cx0 + cx1 - total_w) / 2.0
+        draw.text((tx, metric_ty), metric, font=mf, fill=INK_DARK)
+        draw.text((tx + mw + gap_px, label_ty), label, font=lf, fill=INK_SLATE)
+
+    draw.line((x0, y0, x1, y0), fill=INK_DARK, width=2)
+    draw.line((x0, y1, x1, y1), fill=INK_DARK, width=2)
 
 
 # World landmass outlines in (lat, lon) order for the equirectangular atlas
@@ -1215,7 +1278,7 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     draw.text((x1 - sw, LOWER_Y0 + 5), sub_note, font=sub_fnt, fill=INK_MUTED)
     draw.line((x0, LOWER_Y0 + 30, x1, LOWER_Y0 + 30), fill=INK_DARK, width=2)
 
-    vx0, vy0, vx1, vy1 = x0, 1548, x1, 1838
+    vx0, vy0, vx1, vy1 = x0, 1550, x1, 1840
     vw, vh = vx1 - vx0, vy1 - vy0
     map_img = image_cls.new("RGB", (vw, vh), MAP_SEA)
     md = draw_cls.Draw(map_img)
@@ -1237,7 +1300,7 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
         col = parse_hex_rgb(REGION_BY_KEY[item["region"]]["hex"])
         md.ellipse((bx - 4.0, by - 4.0, bx + 4.0, by + 4.0), fill=col, outline=WHITE, width=1)
 
-    # 1px hairline leader lines + 3px true-location dots for displaced featured pins
+    # 2px hairline leader lines + 3.5px true-location dots for displaced featured pins
     for card in FEATURED_CARDS:
         if card["id"] == 3:
             continue
@@ -1245,12 +1308,12 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
         px, py = project_lat_lon(card["pin_lat"], card["pin_lon"])
         col = parse_hex_rgb(REGION_BY_KEY[card["region"]]["hex"])
         if math.hypot(px - tx, py - ty) > 2.0:
-            md.line((px, py, tx, ty), fill=INK_SLATE, width=1)
-            md.ellipse((tx - 3.0, ty - 3.0, tx + 3.0, ty + 3.0), fill=col, outline=WHITE, width=1)
+            md.line((px, py, tx, ty), fill=INK_DARK, width=2)
+            md.ellipse((tx - 3.5, ty - 3.5, tx + 3.5, ty + 3.5), fill=col, outline=WHITE, width=1)
 
-    # Numbered r15 pins with 3px white ring and 18px bold white numbers
-    pin_r = 15.0
-    pin_fnt = font_for("sans_bold", 18)
+    # Numbered r16 pins with 3px white ring and 19px bold white numbers
+    pin_r = 16.0
+    pin_fnt = font_for("sans_bold", 19)
     for card in FEATURED_CARDS:
         if card["id"] == 3:
             continue
@@ -1275,8 +1338,8 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     canvas.paste(map_img, (vx0, vy0))
     draw.rectangle((vx0, vy0, vx1, vy1), outline=RULE_MED, width=1)
 
-    # Legend below map (y 1846-1934): 6-region color key + crisp pin/dot explanation
-    key_y = 1858
+    # Legend below map (y 1846-1938): 6-region color key + crisp pin/dot explanation
+    key_y = 1860
     key_sz = 17
     for cand in range(18, 13, -1):
         kf = font_for("cond_bold", cand)
@@ -1299,7 +1362,7 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     # Pin / dot / hairline explanation lines (optically aligned to glyph mid-height)
     leg_fnt = font_for("sans_reg", 19)
     _, lby0, _, lby1 = draw.textbbox((0, 0), "Ag", font=leg_fnt)
-    l1_ty = 1883
+    l1_ty = 1885
     l1_cy = l1_ty + (lby0 + lby1) / 2.0
     draw.ellipse((x0, l1_cy - 10, x0 + 20, l1_cy + 10), fill=INK_DARK)
     draw_text_centered(draw, x0 + 10, l1_cy, "1", font_for("sans_bold", 13), WHITE)
@@ -1309,7 +1372,7 @@ def draw_world_map_section(canvas, draw, font_for, image_cls, draw_cls) -> None:
     draw.ellipse((dot_x - 5, l1_cy - 5, dot_x + 5, l1_cy + 5), fill=INK_DARK)
     draw.text((dot_x + 11, l1_ty), "dot: briefs 14–42", font=leg_fnt, fill=INK_SLATE)
     draw.text(
-        (x0, 1911),
+        (x0, 1913),
         "Hairlines lead from crowded spots to the true place.",
         font=leg_fnt,
         fill=INK_SLATE,
@@ -1329,7 +1392,7 @@ def draw_briefs_columns(draw, font_for) -> None:
     draw.line((rx0, LOWER_Y0 + 30, rx1, LOWER_Y0 + 30), fill=INK_DARK, width=2)
 
     mid_x = (rx0 + rx1) // 2
-    body_y0 = 1546
+    body_y0 = 1550
     draw.line((mid_x, body_y0 + 2, mid_x, LOWER_Y1), fill=RULE_MED, width=1)
 
     cols = (
@@ -1449,6 +1512,7 @@ def render_infographic() -> Path:
 
     draw_masthead_and_ribbon(draw, font_for)
     draw_featured_rows(canvas, draw, font_for, Image, ImageDraw)
+    draw_day_in_numbers_strip(draw, font_for)
     draw_world_map_section(canvas, draw, font_for, Image, ImageDraw)
     draw_briefs_columns(draw, font_for)
     draw_date_check_bar(draw, font_for)
@@ -1458,7 +1522,18 @@ def render_infographic() -> Path:
     out_dir.mkdir(parents=True, exist_ok=True)
     dst = out_dir / "entry.png"
     out_img = canvas.resize((FINAL_PX, FINAL_PX), Image.Resampling.LANCZOS)
-    out_img = out_img.quantize(colors=256, method=Image.Quantize.FASTOCTREE, dither=Image.Dither.NONE)
+    try:
+        out_img = out_img.quantize(
+            colors=256,
+            method=Image.Quantize.LIBIMAGEQUANT,
+            dither=Image.Dither.NONE,
+        )
+    except ValueError:
+        out_img = out_img.quantize(
+            colors=256,
+            method=Image.Quantize.MEDIANCUT,
+            dither=Image.Dither.NONE,
+        )
     out_img.save(dst, format="PNG", optimize=True, compress_level=9)
     if dst.stat().st_size > MAX_FILE_BYTES:
         raise ValueError(f"Output exceeds 1 MiB cap: {dst.stat().st_size} bytes")
